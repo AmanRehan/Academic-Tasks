@@ -22,7 +22,8 @@ public class Students {
                     sum += marks;
                     details[row][col] = marks;
                 } else {
-                    details[row][col] = sum;
+                    details[row][col] = sum/col;
+                    sum = 0;
                 }
             }
         }
